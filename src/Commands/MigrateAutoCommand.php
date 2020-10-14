@@ -32,7 +32,7 @@ class MigrateAutoCommand extends Command
                     $class->migration($table);
                 });
                 
-                return;
+                continue;
             }
             
             $tempTable = 'temp_' . $class->getTable();
